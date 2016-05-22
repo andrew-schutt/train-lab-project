@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/169/Sensors
+END
+hall_test.adb
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/159/Sensors/hall_test.adb
+END
+halls.adb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/132/Sensors/halls.adb
+END
+halls.ads
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/133/Sensors/halls.ads
+END
+hall_io.adb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/169/Sensors/hall_io.adb
+END
+hall_io.ads
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/TrainLab-Spring11-Cleveland/!svn/ver/151/Sensors/hall_io.ads
+END

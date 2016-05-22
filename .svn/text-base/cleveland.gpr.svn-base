@@ -1,0 +1,92 @@
+project Cleveland is
+
+   for Object_Dir use "bin";
+   type Target_Type is
+      ("Windows", "MaRTE", "Linux");
+   Target : Target_Type := external ("Target", "Linux");
+
+   case Target is
+
+      when "Linux" =>
+         for Main use ("dispatcher.adb", "button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "sound_check.adb", "sound_check_2.adb", "voice_test.adb", "motors_test.adb", "dac_test.adb", "adc_test.adb", 
+"hall_test.adb", "cabs_test.adb", "blocks_test.adb", "test_sound.adb", "command_test.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+         for Source_Dirs use (".", "Layout", "Hand_Controller", "Port_IO", "Train", "ADC", "DAC", "Sound", "Motors", "Bounded_Queue", "Sensors", "Cabs", "Blocks", "Display", "Command", "Turnouts", "Engineers");
+         for Source_Files use ("layout.ads", "layout.adb", "locomotives.ads", "layout-search.adb", "layout-search.ads", "trains.ads", "hand_controller.ads", "port_io.adb", "port_io.ads", "hand_controller.adb", "dac.ads", "adc.ads", "adc.adb", 
+"button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "dac.adb", "sound_unit.ads", "sound_unit.adb", "sound_check.adb", "sound_check_2.adb", "doubletalk.ads", "voice_test.adb", "doubletalk.adb", "motors.ads", 
+"motors.adb", "motors_test.adb", "bounded_queue.adb", "bounded_queue.ads", "adc_test.adb", "sound.ads", "dac_test.adb", "sound.adb", "halls.ads", "halls.adb", "hall_test.adb", "cabs.adb", "cabs.ads", "cabs_test.adb", "hall_io.ads", 
+"hall_io.adb", "command.ads", "display.adb", "display.ads", "display_test.adb", "turnouts.ads", "blocks.ads", "blocks.adb", "engineers.ads", "blocks_test.adb", "turnouts.adb", "trains.adb", "command.adb", "test_sound.adb", 
+"command_test.adb", "engineers.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+
+      when "MaRTE" =>
+         for Main use ("dispatcher.adb", "button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "sound_check.adb", "sound_check_2.adb", "voice_test.adb", "motors_test.adb", "dac_test.adb", "adc_test.adb", 
+"hall_test.adb", "cabs_test.adb", "blocks_test.adb", "test_sound.adb", "command_test.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+         for Source_Dirs use (".", "Layout", "Hand_Controller", "Port_IO", "Train", "ADC", "DAC", "Sound", "Motors", "Bounded_Queue", "Sensors", "Cabs", "Blocks", "Display", "Command", "Turnouts", "Engineers");
+         for Source_Files use ("layout.ads", "layout.adb", "locomotives.ads", "layout-search.adb", "layout-search.ads", "trains.ads", "hand_controller.ads", "port_io.adb", "port_io.ads", "hand_controller.adb", "dac.ads", "adc.ads", "adc.adb", 
+"button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "dac.adb", "sound_unit.ads", "sound_unit.adb", "sound_check.adb", "sound_check_2.adb", "doubletalk.ads", "voice_test.adb", "doubletalk.adb", "motors.ads", 
+"motors.adb", "motors_test.adb", "bounded_queue.adb", "bounded_queue.ads", "adc_test.adb", "sound.ads", "dac_test.adb", "sound.adb", "halls.ads", "halls.adb", "hall_test.adb", "cabs.adb", "cabs.ads", "cabs_test.adb", "hall_io.ads", 
+"hall_io.adb", "command.ads", "display.adb", "display.ads", "display_test.adb", "turnouts.ads", "blocks.ads", "blocks.adb", "engineers.ads", "blocks_test.adb", "turnouts.adb", "trains.adb", "command.adb", "test_sound.adb", 
+"command_test.adb", "engineers.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+
+      when "Windows" =>
+         for Main use ("dispatcher.adb", "button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "sound_check.adb", "sound_check_2.adb", "voice_test.adb", "motors_test.adb", "dac_test.adb", "adc_test.adb", 
+"hall_test.adb", "cabs_test.adb", "blocks_test.adb", "test_sound.adb", "command_test.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+         for Source_Dirs use (".", "Layout", "Hand_Controller", "Port_IO", "Train", "ADC", "DAC", "Sound", "Motors", "Bounded_Queue", "Sensors", "Cabs", "Blocks", "Display", "Command", "Turnouts", "Engineers");
+         for Source_Files use ("layout.ads", "layout.adb", "locomotives.ads", "layout-search.adb", "layout-search.ads", "trains.ads", "hand_controller.ads", "port_io.adb", "port_io.ads", "hand_controller.adb", "dac.ads", "adc.ads", "adc.adb", 
+"button_test.adb", "controller_test.adb", "layout_test.adb", "layout_search_test.adb", "dac.adb", "sound_unit.ads", "sound_unit.adb", "sound_check.adb", "sound_check_2.adb", "doubletalk.ads", "voice_test.adb", "doubletalk.adb", "motors.ads", 
+"motors.adb", "motors_test.adb", "bounded_queue.adb", "bounded_queue.ads", "adc_test.adb", "sound.ads", "dac_test.adb", "sound.adb", "halls.ads", "halls.adb", "hall_test.adb", "cabs.adb", "cabs.ads", "cabs_test.adb", "hall_io.ads", 
+"hall_io.adb", "command.ads", "display.adb", "display.ads", "display_test.adb", "turnouts.ads", "blocks.ads", "blocks.adb", "engineers.ads", "blocks_test.adb", "turnouts.adb", "trains.adb", "command.adb", "test_sound.adb", 
+"command_test.adb", "engineers.adb", "new_dispatcher.adb", "display_test.adb", "turnout_test.adb", "engineer_test.adb");
+   end case;
+
+   package Compiler is
+
+      case Target is
+
+         when "Linux" =>
+            for Default_Switches ("ada") use ("-g", "-gnato", "-fstack-check", "-gnat05", "-gnatwad", "-gnatyabefhiklnprt", "-gnatyM80");
+
+         when "MaRTE" =>
+            for Default_Switches ("ada") use ("-g", "-gnato", "-fstack-check", "-gnat05", "-gnatwad", "-gnatyabefhiklnprt", "-gnatyM80");
+
+         when "Windows" =>
+            for Default_Switches ("ada") use ("-g", "-gnato", "-fstack-check", "-gnat05", "-gnatwad", "-gnatyabefhiklnprt", "-gnatyM80");
+      end case;
+   end Compiler;
+
+   package Builder is
+
+      case Target is
+
+         when "Linux" =>
+            for Default_Switches ("ada") use ("-g", "-C", "--RTS=native");
+
+         when "MaRTE" =>
+            for Default_Switches ("ada") use ("-g", "-C", "-x", "-o", "bin/mprogram");
+
+         when "Windows" =>
+            for Default_Switches ("ada") use ("-s", "-g", "-C");
+      end case;
+   end Builder;
+
+   package Ide is
+      for Vcs_Kind use "Subversion";
+      for Vcs_Repository_Root use "https://student.cs.uni.edu/svn/TrainLab-Spring11-Cleveland";
+
+      case Target is
+
+         when "Linux" =>
+
+         when "MaRTE" =>
+            for Compiler_Command ("ada") use "mgnatmake";
+
+         when "Windows" =>
+
+      end case;
+   end Ide;
+
+   package Pretty_Printer is
+      for Default_Switches ("ada") use ("-M80", "-c3", "-A1", "-A2", "-A3", "-A4");
+   end Pretty_Printer;
+
+end Cleveland;
+
